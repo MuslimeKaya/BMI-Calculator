@@ -1,0 +1,42 @@
+/* Form kapsayıcısını merkezde ve belirli bir genişlikte tutma */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: #212020;
+    color: white;
+  }
+  
+  /* Form grubu düzeni için Flexbox kullanımı */
+  .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Label ve form kontrolü arasındaki boşluk */
+  .form-group label {
+    width: 150px; /* İsteğe bağlı: Label genişliği */
+    text-align: right;
+    margin-right: 10px;
+  }
+  
+  /* Select ve input öğelerinin hizalanması */
+  .form-group select,
+  .form-group input {
+    flex: 1; /* Kalan alanı kaplamasını sağlamak için esnek yapı */
+    padding: 4px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+  }
+#myButton:hover{
+    width: 80px;
+    height: 25px;
+    background-color: rgb(137, 159, 159);
+}
